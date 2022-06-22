@@ -1,0 +1,18 @@
+---
+framework: jasmine
+preRun:
+     command:
+        - yarn install
+postMerge:
+  pattern:
+    - "./i18n/spec/*.js"
+    - "./i18n/ucd/spec/*.js"
+preMerge:
+  pattern:
+    - "./i18n/spec/*.js"
+    - "./i18n/ucd/spec/*.js"
+postRun:
+     command:
+        - yarn --version
+nodeVersion: 14.16.1
+version: 1.0.1
