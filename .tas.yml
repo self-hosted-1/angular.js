@@ -1,5 +1,7 @@
 ---
 framework: jasmine
+blocklist:
+      - "./i18n/spec/converterSpec.js##convertDatetimeData##should convert empty datetime obj"
 preRun:
      command:
         - yarn install
